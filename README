@@ -1,0 +1,12 @@
+
+Multiple Fireworks for ESP32
+
+
+To split the led string into multiple independet fireworks, please change the followings:
+
+main.h: 
+- STRIP_SPLIT
+- NUM_STRIPS
+
+Fireworks.cpp
+- firework_array - make sure this array contains STRIP_SPLIT*NUM_STRIPS elements
